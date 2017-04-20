@@ -6,36 +6,50 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600|Roboto:300,400" rel="stylesheet">
 
 	<title>Westerdals billigste øl</title>
+	<script>
+		$(function(){
+        var stickyHeaderTop = $('#stickyheader').offset().top;
+
+        $(window).scroll(function(){
+                if( $(window).scrollTop() > stickyHeaderTop ) {
+                        $('#stickyheader').css({position: 'fixed', top: '0px'});
+                } else {
+                        $('#stickyheader').css({position: 'static', top: '0px'});
+                }
+        	});
+  		});
+	</script>
 </head>
 <body>
-    
-    <!-- Elisabeth og Sam sin kode -->
+	<!--Elisabeth og Sam sin kode-->
 	<div class="container">
-        <div id="navContainer">
-            <nav class="section">
-                <ul>
-                    <li>
-                        <a href="index.html">HJEM</a>
-                    </li>
-                    <li>
-                        <a href="#s2">OM OSS</a>
-                    </li>
-                    <li>
-                        <a href="#s3">SØK</a>
-                    </li>
-                    <li>
-                        <a href="#s4">STATISTIKK</a>
-                    </li>
-                </ul>
-            </nav>
+		<div class="container--header header">
+			<ul class="manu unsticky-menu">
+				<li><a href="#">HJEM</a></li>
+				<li><a href="#">OM OSS</a></li>
+				<li><a href="#">SØK</a></li>
+				<li><a href="#">STATISTIKK</a></li>
+			</ul>
+		</div>
 		<div class="container--inner">
 			<div class="container--inner--text">
-				 <h1>Westerdals billigste øl</h1>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac leo ut turpis vulputate porta sit amet vel elit. Sed nec risus in orci sollicitudin euismod ut eu ipsum.</p>
+				<h1>Westerdals billigste øl</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac leo ut turpis vulputate porta sit amet vel elit. Sed nec risus in orci sollicitudin euismod ut eu ipsum.</p>
 			</div>
 		</div>
 	</div>
-    </div>
+	<div class="breakdiv"></div>
+	<div class="header" id="stickyheader">
+		<ul class="manu sticky-menu">
+			<li><a href="#">HJEM</a></li>
+			<li><a href="#">OM OSS</a></li>
+			<li><a href="#">SØK</a></li>
+			<li><a href="#">STATISTIKK</a></li>
+		</ul>
+	</div>
+	<div class="mainContainer">
+	</div>
+</body>
     
     <!-- Her begynner infosiden - Sam og Elisabeth -->
     
