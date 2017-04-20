@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset="utf-8">
+         <link type="text/css" rel="stylesheet" href="gruppe-15/FinnSiden.css"/>
+         <title> Westerdals Billigste Øl </title>
+ </head>
+    
+    
+    
+    
+    
+<body>
+    
+    <h2> HJEM  |  OM OSS  |  SØK  |  STATISTIKK  </h2>
+    
+    <br>
+    <br>
+    
+    <h1> FINN DEN BILLIGSTE PILSEN! </h1>
+    
+    <div id="sokemeny">
+ 
+    <p>Hvor langt er du villig til å gå? avstand i meter</p> <input id="avstand" type="range" min="0" max="1000" value="0" step="100" onchange="showValue(this.value)" />
+    <span id="range">0</span>
+    <script type="text/javascript">
+    function showValue(newValue)
+        {
+            document.getElementById("range").innerHTML=newValue;
+        }
+    
+    </script>
+    
+
+    
+   
+   <p>Aldersgrense</p> <input id="alder" type="range" min="18" max="26" value="18" step="1" onchange="showValue(this.value)" />
+    <span id="alderTeller">0</span>
+    <script type="text/javascript">
+    function showValue(newValue)
+        {
+            document.getElementById("alderTeller").innerHTML=newValue;
+        }
+    
+    
+    </script>
+    
+    <p>Pris MAX KR</p> <input id="pris" type="range" min="30" max="100" value="30" step="1" onchange="showValue(this.value)" />
+    <span id="alderTeller">0</span>
+    <script type="text/javascript">
+    function showValue(newValue)
+        {
+            document.getElementById("alderTeller").innerHTML=newValue;
+        }
+    
+    
+    </script>
+    
+      <p>Åpent til MIN: </p> <input id="apning" type="range" min="0" max="3" value="0" step="1" onchange="showValue(this.value)" />
+    <span id="alderTeller">0</span>
+    <script type="text/javascript">
+    function showValue(newValue)
+        {
+            document.getElementById("alderTeller").innerHTML=newValue;
+        }
+    
+    
+    </script>
+    
+    <br>
+    <br>
+    
+      <span>Matservering<br> NEI </span> <input id="mat" type="range" min="0" max="1" value="0" step="1" onchange="showValue(this.value)" />
+      <span>JA</span>
+    
+    
+    <br>
+    <br>
+    
+      <span>Stedet tilbyr studentrabatt?<br> NEI </span> <input id="rabatt" type="range" min="0" max="1" value="0" step="1" />
+      <span>JA</span>
+        
+    <br>
+    <br>    
+        
+        <div id="sokeknapp"> <h1> Søk </h1> </div>
+        
+    </div>
+        
+    </body>
+
+
+</html>
