@@ -52,3 +52,36 @@ p{
     padding: 0 125px;
 }
 
+
+/*          HER BEGYNNER SOKESIDE CSS       */
+
+/*        KRISTOFFER BEGYNNER HER    ///    */
+
+
+
+
+#sokemeny {
+    margin: auto;
+    border: 10px;
+    padding: 50px;
+    
+    top: 500px;
+    height: 500px;
+    width: 500px;
+    background-color: cornflowerblue;
+}
+
+
+#sokeknapp {
+    margin: auto;
+    
+    background-color: darkgrey;
+    height: 40px;
+    width: 200px;
+    
+}
+
+
+
+/* HER AVSLUTTER SOKESIDEN CSS /* 
+/* KRISTOFFER AVSLUTTER HER    /*   
