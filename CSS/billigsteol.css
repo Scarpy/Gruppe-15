@@ -160,7 +160,7 @@ p{
 {
     position: absolute;
     top: 115px;
-    left: 775px;
+    left: 57vw;
     height: 450px;
     width: 1px;
     border-color: #37ABB1;
@@ -180,7 +180,7 @@ p{
 
 #fjerdingen
 {
-    width: 90%;
+    width: 45vw;
     height: 475px;
     /* Skygge parametere! Kopier denne for å bruke til andre bilder! */
     box-shadow: 5px 5px 30px 5px #BDC3C7;
