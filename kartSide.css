@@ -30,7 +30,7 @@ html, body {
     top: 12.5%;
     width: 33%;
     height: 75%;
-    /** background-color: red; **/
+    background-color: rgb(176, 204, 208);
 }
 h1, h2 {
     margin: 10px;
