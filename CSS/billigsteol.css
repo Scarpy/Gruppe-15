@@ -148,19 +148,19 @@ p{
     border-left-width: 1px;
 }
 
-/* Skal prøve å lage en mindre skillestrek med denne!
+/* Skal prøve å lage en mindre skillestrek med denne! */
 #borderBox
 {
     position: absolute;
-    height: 300px;
+    top: 150px;
+    height: 400px;
     width: 50px;
     border-color: #37ABB1;
     border-left-style: solid;
     border-left-width: 1px;
     background-color: red;
+    z-index: 1;
 }
-
-*/
 
 #infoP
 {
