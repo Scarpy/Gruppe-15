@@ -29,6 +29,7 @@ html, body {
     top: 12.5%;
     width: 33%;
     height: 75%;
+    /**Placeholder (remove when done)**/
     background-color: red;
 }
 h1 {
