@@ -87,26 +87,29 @@ p{
 }
 
 .breakdiv {
-    height: 70px;
+    height: 50px;
 }
 
 #stickyheader {
     top: 100px;
-    padding-top: 20px;
+    padding-top: 0px;
+    background-color: #D6E6E8;
 }
 
 #stickyheader li {
-    border-color: grey;
+    border-color: #7F8B8D;
+    background-color: #D6E6E8;
 }
 
 #stickyheader li a {
-    color: grey;
+    color: #7F8B8D;
+    background-color: #D6E6E8;
 }
 
 .mainContainer {
     width: 100%; 
     height: 2000px;
-    background: linear-gradient( #D6E6E8, #77B6C0 ); 
+    background-color: #D6E6E8; 
 }
 
 #pilNed {
