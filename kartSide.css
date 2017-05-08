@@ -1,6 +1,9 @@
 #map {
+    position: absolute;
+    top: 12.5%;
+    left: 5%;
     height: 600px;
-    width: 600px;
+    width: 750px;
 }
 html, body {
     height: 100%;
@@ -9,8 +12,8 @@ html, body {
 }
 #floating-panel {
     position: absolute;
-    top: 10px;
-    left: 25%;
+    top: 13.5%;
+    left: 20%;
     z-index: 5;
     background-color: #fff;
     padding: 5px;
