@@ -23,3 +23,9 @@ html, body {
     line-height: 30px;
     padding-left: 10px;
 }
+#mainContent {
+    position: absolute;
+    left: 80%;
+    top: 12.5%;
+    color: red;
+}
