@@ -1,5 +1,4 @@
 * {
-   font-family: 'Roboto', serif; 
    margin: 0;
 }
 
@@ -38,6 +37,8 @@
     font-size: 1.3rem;
     padding: 5px 12px 5px 10px; 
     border-right: 1px solid white;
+    font-family: 'Oswald', serif;
+    letter-spacing: 2px;
 }
 
 .manu li a {
@@ -69,6 +70,7 @@
     width: 850px; 
     margin-left: -200px;
     margin-right: -200px;
+    font-family: 'Roboto', serif;
 }
 
 h1{
