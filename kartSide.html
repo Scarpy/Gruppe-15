@@ -13,11 +13,11 @@
             <b>Start: </b>
                 <select id="start">
                     <!--Må finne ut av hvordan man får inn plaseringen på destinasjoner!-->
-                    <option value="">Westerdals Oslo ACT</option>
+                    <option value="Chr. Krohgs gate 32, 0186 Oslo">Westerdals Oslo ACT</option>
                 </select>
             <b>End: </b>
                 <select id="end">
-                    <option value="">Ivar's Kro</option>
+                    <option value="Grønland 14, 0190 Oslo">Ivar's Kro</option>
                     <option value="los angeles, ca">Los Angeles</option>
                 </select>
             </div>
@@ -46,7 +46,7 @@
           directionsService.route({
             origin: document.getElementById('start').value,
             destination: document.getElementById('end').value,
-            travelMode: 'DRIVING'
+            travelMode: 'WALKING'
           }, function(response, status) {
             if (status === 'OK') {
               directionsDisplay.setDirections(response);
