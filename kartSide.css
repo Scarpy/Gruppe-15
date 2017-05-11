@@ -37,7 +37,9 @@ html, body {
     top: 12.5%;
     width: 33%;
     height: 75%;
-    background-color: #B0CCD1;
+    border-color: #37ABB1;
+    border-left-style: solid;
+    border-left-width: 1px;
 }
 
 /* Skrift */
