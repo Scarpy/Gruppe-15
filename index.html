@@ -74,6 +74,127 @@ $connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}, $userna
         
     <p id="infoP">Sit ei dicant volutpat, consul sanctus adipisci ne sea, tollit ubique mediocritatem in nec. Conceptam maiestatis at per. Error impedit copiosae id mei, has nulla petentium ad, vel paulo graeci patrioque at. Feugait posidonium cum eu, clita utamur utroque vim ea.</p>
     </div>
+    
+     <!-- HER BEGYNNER SOKESIDEN - KRISTOFFER -->
+    
+    <!--  /////////////////////////////////// -->
+    
+    <br>
+    
+    <div id="sokContainer">
+    
+    <h2 id="sokeOverskrift"> FINN DEN BILLIGSTE PILSEN </h2>
+        
+        <br>
+        <br>
+        <br>
+    
+    
+    
+    <div id="sokemeny">
+ 
+    <span id="soktekst">Avstand</span> <input id="avstand" type="range" min="0" max="1000" value="0" step="100" onchange="visVerdi(this.value)" />
+    <span id="range">0</span>
+    <script type="text/javascript">
+    function visVerdi(newValue)
+        {
+            document.getElementById("range").innerHTML=newValue;
+        }
+    
+    </script>
+        
+        <br>
+        <br>
+        <br>
+    
+
+    
+   
+   <span>Aldersgrense</span> <input id="alder" type="range" min="18" max="26" value="18" step="1" onchange="visAlder(this.value)" />
+    <span id="Alder">0</span>
+    <script type="text/javascript">
+    function visAlder(newValue)
+        {
+            document.getElementById("Alder").innerHTML=newValue;
+        }
+    
+    
+    </script>
+        
+        <br>
+        <br>
+        <br>
+        
+    
+    <span>Prisnivå</span> <input id="pris" type="range" min="30" max="100" value="30" step="1" onchange="showValue(this.value)" />
+    <span id="alderTeller">0</span>
+    <script type="text/javascript">
+    function showValue(newValue)
+        {
+            document.getElementById("alderTeller").innerHTML=newValue;
+        }
+    
+    
+    </script>
+        
+        <br>
+        <br>
+        <br>
+        
+    
+      <span>Åpningstider </span> <input id="apning" type="range" min="0" max="3" value="0" step="1" onchange="visAapning(this.value)" />
+    <span id="aapning">0</span>
+    <script type="text/javascript">
+    function visAapning(newValue)
+        {
+            document.getElementById("aapning").innerHTML=newValue;
+        }
+    
+    
+    </script>
+    
+    <br>
+    <br>
+    <br>
+        
+    
+        <div id="jaNei">
+        
+      <span>Matservering </span> <input id="mat" type="range" min="0" max="1" value="0" step="1" onchange="showValue(this.value)" />
+      
+    
+    
+    <br>
+    <br>
+    
+      <span>Studentrabatt? </span> <input id="rabatt" type="range" min="0" max="1" value="0" step="1" />
+      
+        
+    <br>
+    <br>  
+            
+        </div>
+        
+        <br>
+        <br>
+        
+        <input type="button" class="button" value="SØK >>">
+        
+        
+    </div>
+        
+        
+
+        
+       
+        
+    </div>
+        
+        
+<!--- HER AVSLUTTER SOKESIDEN   --->
+    
+    <!--    MELLOMROM ------->
+        
 </body>
 
 
