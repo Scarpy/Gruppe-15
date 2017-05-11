@@ -34,9 +34,21 @@ html, body {
 #mainContent {
     position: absolute;
     left: 63%;
+    top: 31.7%;
+    width: 33%;
+    height: 55%;
+    border-color: #37ABB1;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+/* Logo */
+#logo {
+    position: absolute;
+    left: 63%;
     top: 12.5%;
     width: 33%;
-    height: 75%;
+    height 20%;
     border-color: #37ABB1;
     border-left-style: solid;
     border-left-width: 1px;
