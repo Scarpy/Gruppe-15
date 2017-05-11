@@ -41,6 +41,7 @@
     letter-spacing: 2px;
 }
 
+
 .manu li a {
     text-decoration: none;
     color: white;
@@ -48,6 +49,10 @@
 
 .manu li:last-child {
     border-right: 0;
+}
+
+.manu a:hover {
+    text-decoration: overline;
 }
 
 .container--inner { 
@@ -93,6 +98,8 @@ p{
 #stickyheader {
     top: 100px;
     padding-top: 0px;
+    padding-top: 15px;
+    display: none; 
     background-color: #D6E6E8;
 }
 
@@ -157,4 +164,5 @@ p{
     /* Skygge parametere! Kopier denne for å bruke til andre bilder! */
     box-shadow: 5px 5px 30px 5px #BDC3C7;
 }
+
 
