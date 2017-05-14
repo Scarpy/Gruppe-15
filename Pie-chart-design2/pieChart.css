@@ -25,7 +25,6 @@
 }
 #chartTitle2 {
     position: absolute;
-    z-index: 1;
     font-family: 'Roboto', sans-serif;
     top: 100;
     right: 290;

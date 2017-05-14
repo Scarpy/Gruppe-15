@@ -34,6 +34,69 @@ $connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}, $userna
         	});
   		});
 	</script>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawPopularityChart);
+      google.charts.setOnLoadCallback(drawNowChart);
+      function drawPopularityChart() {
+
+          //insert data here 
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Beers');
+        data.addColumn('number', 'Prices');
+        data.addRows([
+          ['Lir', 23],
+          ['Mir', 32],
+          ['Sir', 40],
+          ['Zir', 28],
+          ["Dje", 59]
+        ]);
+
+          //adjust how you want the chart to look
+        var options = {titlePosition: 'none',
+                       width:700,
+                       height:790,
+                       colors: ["#19757a", "#1e8d92", "#37abb1","#65b8bc","#90d0d3"],
+                       backgroundColor: '#d6e6e8',
+                       pieSliceBorderColor:"transparent",
+                       pieHole: 0.4,
+                       legend: { position : 'bottom'}};
+
+        var chart = new google.visualization.PieChart(document.getElementById('pieChart1'));
+        chart.draw(data, options);
+      }
+
+      function drawNowChart() {
+
+          //insert data here
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Beers');
+        data.addColumn('number', 'Prices');
+        data.addRows([
+          ['Dis', 15],
+          ['Mis', 12],
+          ['Sis', 30],
+          ['Dis', 20],
+          ['Dris', 10]
+        ]);
+
+          //adjust how the chart will look
+        var options = {titlePosition: 'none',
+                       width:700,
+                       height:790,
+                       colors: ["#19757a", "#1e8d92", "#37abb1","#65b8bc","#90d0d3"],
+                       backgroundColor: '#d6e6e8',
+                       pieSliceBorderColor:"transparent",
+                       pieHole: 0.4,
+                       legend: { position : 'bottom'}};
+
+        var chart = new google.visualization.PieChart(document.getElementById('pieChart2'));
+        chart.draw(data, options);
+      }
+    </script>
+
 </head>
 <body>
 	<!--Enkelt oppsett. Klasser kan endres-->
@@ -195,6 +258,18 @@ $connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}, $userna
     
     <!--    MELLOMROM ------->
         
+    <table class="columns">
+      <tr>
+        <td><div id="pieChart1" style="background-color:#D6E6E8;"></div></td>
+        <td><div id="pieChart2" style="background-color:#D6E6E8;"></div></td>
+      </tr>
+        <h1 id="popTitle">HER ER WESTERDØLINGENE</h1>
+    </table>
+      
+      <h2 id="chart1Title">Akkurat nå</h2>
+      <h2 id="chartTitle2">Den siste måned</h2>
+      <div id="infoBoxBorder2"></div>
+    
 </body>
 
 
