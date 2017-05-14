@@ -34,11 +34,32 @@
     background-color: red;
 }
 
-#testBilde
+#testBilde1
 {
     position: absolute;
     top: 150px;
     left: 200px;
+}
+
+#testBilde2
+{
+    position: absolute;
+    top: 150px;
+    left: 475px;
+}
+
+#testBilde3
+{
+    position: absolute;
+    top: 150px;
+    left: 750px;
+}
+
+#testBilde4
+{
+    position: absolute;
+    top: 150px;
+    left: 1025px;
 }
 
 /*#testContainer--inner 
