@@ -153,14 +153,13 @@ p{
 #infoBoxBorder
 {
     position: absolute;
-    top: 147.25%;
+    top: 125%;
     left: 810px;
     height: 350px;
     width: 1px;
     border-color: #37ABB1;
     border-left-style: solid;
     border-left-width: 1px;
-    z-index: 1;
 }
 
 #infoP

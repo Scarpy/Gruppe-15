@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+.columns {
+    position: relative;
+    background-color: #d6e6e8;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+#popTitle {
+    position: absolute;
+    left: 550;
+    top: 40;
+    font-family: 'Oswald', serif;
+    letter-spacing: 2px;
+}
+
+#chart1Title {
+    position: absolute;
+    left: 325;
+    top: 100;
+    font-family: 'Roboto', sans-serif;
+}
+#chartTitle2 {
+    position: absolute;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    top: 100;
+    right: 290;
+}
+
+#infoBoxBorder
+{
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    height: 350px;
+    width: 1px;
+    border-color: #37ABB1;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
