@@ -80,7 +80,7 @@
     
     <div id="sokemeny">
  
-    <span id="soktekst">Avstand</span> <input id="avstand" type="range" min="0" max="1000" value="0" step="100" onchange="visVerdi(this.value)" />
+    <span id="soktekst">Avstand</span> <input name="avstand" id="avstand" type="range" min="0" max="1000" value="0" step="100" onchange="visVerdi(this.value)" />
     <span id="range">0</span>
     <script type="text/javascript">
     function visVerdi(newValue)
@@ -97,7 +97,7 @@
 
     
    
-   <span>Aldersgrense</span> <input id="alder" type="range" min="18" max="26" value="18" step="1" onchange="visAlder(this.value)" />
+   <span>Aldersgrense</span> <input name="alder" id="alder" type="range" min="18" max="26" value="18" step="1" onchange="visAlder(this.value)" />
     <span id="Alder">0</span>
     <script type="text/javascript">
     function visAlder(newValue)
@@ -113,7 +113,7 @@
         <br>
         
     
-    <span>Prisnivå</span> <input id="pris" type="range" min="30" max="100" value="30" step="1" onchange="showValue(this.value)" />
+    <span>Prisnivå</span> <input name="priss" id="pris" type="range" min="30" max="100" value="30" step="1" onchange="showValue(this.value)" />
     <span id="alderTeller">0</span>
     <script type="text/javascript">
     function showValue(newValue)
@@ -129,7 +129,7 @@
         <br>
         
     
-      <span>Åpningstider </span> <input id="apning" type="range" min="0" max="3" value="0" step="1" onchange="visAapning(this.value)" />
+      <span>Åpningstider </span> <input name="apningstid" id="apning" type="range" min="0" max="3" value="0" step="1" onchange="visAapning(this.value)" />
     <span id="aapning">0</span>
     <script type="text/javascript">
     function visAapning(newValue)
