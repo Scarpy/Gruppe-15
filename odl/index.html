@@ -27,9 +27,9 @@ $connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}, $userna
 
         $(window).scroll(function(){
                 if( $(window).scrollTop() > 800 ) {
-                        $('#stickyheader').css({position: 'fixed', top: '0px', display: 'block'});
+                        $('#stickyheader').css({position: 'fixed', top: '0px'});
                 } else {
-                        $('#stickyheader').css({position: 'static', top: '100px', display: 'none'});
+                        $('#stickyheader').css({position: 'absolute', top: '150px'});
                 }
         	});
   		});

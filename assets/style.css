@@ -2,3 +2,62 @@
 	margin: 0; 
 	padding: 0;
 }
+
+html {
+    background-color: #d6e6e8;
+}
+
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px;
+    background: url(Bilder/bakgrunn.png) no-repeat center fixed; 
+    background-size: cover;
+}
+
+#stickyheader {
+	height: 50px;
+    width: 100%;
+	position: absolute;
+	top: 115px;
+	display: block;
+}
+
+.header {
+	padding: 20px 0;
+    color: white;
+    text-align: center; 
+}
+
+.header-manu {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.header-manu li {
+    display: inline;
+    text-decoration: none; 
+    font-size: 1.3rem;
+    padding: 5px 12px 5px 10px; 
+    border-right: 1px solid white;
+    font-family: 'Oswald', serif;
+    letter-spacing: 2px;
+}
+
+
+.header-manu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-manu li:last-child {
+    border-right: 0;
+}
+
+.header-manu a:hover {
+    text-decoration: overline;
+}
