@@ -42,7 +42,7 @@ html, body {
     border-left-width: 1px;
 }
 
-/* Logo */
+/* Logo div */
 #logo {
     position: absolute;
     left: 63%;
@@ -52,6 +52,11 @@ html, body {
     border-color: #37ABB1;
     border-left-style: solid;
     border-left-width: 1px;
+}
+
+/* Image */
+#mapsImg {
+    width: 150px;
 }
 
 /* Skrift */
