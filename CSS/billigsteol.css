@@ -342,7 +342,6 @@ input[type=range]:focus::-ms-fill-upper {
 /* KRISTOFFER AVSLUTTER HER    */   
 
 
-}
 .columns {
     position: relative;
     background-color: #d6e6e8;
@@ -352,8 +351,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #popTitle {
-    position: absolute;
-    left: 540px;
+    text-align: center;
     top: 290%;
     font-family: 'Oswald', serif;
     letter-spacing: 2px;
