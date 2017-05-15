@@ -1,0 +1,63 @@
+/* Google Maps */
+#map {
+    position: absolute;
+    top: 12.5%;
+    left: 5%;
+    height: 600px;
+    width: 750px;
+}
+
+/* Hovedside */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #D6E6E8;
+}
+
+/* Navigasjonsbar på Map */
+#floating-panel {
+    position: absolute;
+    top: 13.5%;
+    left: 20%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+/* Tekstkolonne */
+#mainContent {
+    position: absolute;
+    left: 63%;
+    top: 31.7%;
+    width: 33%;
+    height: 55%;
+    border-color: #37ABB1;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+/* Logo */
+#logo {
+    position: absolute;
+    left: 63%;
+    top: 12.5%;
+    width: 33%;
+    height 20%;
+    border-color: #37ABB1;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+/* Skrift */
+h1, h2 {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', 'sans-serif';
+    color: #4A4A4A;
+}
