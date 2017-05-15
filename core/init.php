@@ -1,5 +1,5 @@
 <?php 
-	require 'databse/db.php';
+	require 'database/db.php';
 
 	class Init {
    	public static function header(){
@@ -10,12 +10,12 @@
 			<head>
 			    <meta charset="utf-8" />
 			    <meta name="author" content="Gruppe 15 - PRO100">
-				<meta http-equiv="X-UA-Compatible" content="IE=9" />tff 
-				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+				<meta http-equiv="X-UA-Compatible" content="IE=9" />
 			    <link rel="stylesheet" href="assets/style.css" type="text/css" />
 
 			    <title>Billigst Øl</title>
 			</head>
+			<body>
    		';
 
    		return $content;
@@ -25,7 +25,7 @@
    	public static function footer(){
 
    		$content = '
-				</body>
+			</body>
 			</html>
    		';
 
