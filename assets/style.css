@@ -12,8 +12,8 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 2000px;
-    background: url(Bilder/bakgrunn.png) no-repeat center fixed; 
+    height: 800px;
+    background: url(../img/bakgrunn.png) no-repeat center fixed; 
     background-size: cover;
 }
 
