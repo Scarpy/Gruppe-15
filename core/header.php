@@ -17,9 +17,9 @@
 
     $(window).scroll(function(){
             if( $(window).scrollTop() > 800 ) {
-                    $('#stickyheader').css({position: 'fixed', top: '0px'});
+                    $('#stickyheader').css({position: 'fixed', top: '0px', background: '#d6e6e8'});
             } else {
-                    $('#stickyheader').css({position: 'absolute', top: '115px'});
+                    $('#stickyheader').css({position: 'absolute', top: '115px', background: 'transparent'});
             }
     	});
 	});

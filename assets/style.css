@@ -18,10 +18,11 @@ html {
 }
 
 #stickyheader {
-	height: 50px;
+	height: 31px;
     width: 100%;
 	position: absolute;
 	top: 115px;
+	z-index: 100;
 	display: block;
 }
 
@@ -110,7 +111,7 @@ p{
 /* Container til infosiden. */
 #infoContainer {
     width: 100%; 
-    height: 800px;
+    height: 1000px;
     position: relative;
     margin-top: 100px;
     background-color: #D6E6E8; 
