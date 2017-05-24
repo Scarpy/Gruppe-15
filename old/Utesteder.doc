@@ -1,0 +1,172 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+            xmlns:x="urn:schemas-microsoft-com:office:word"
+            xmlns="http://www.w3.org/TR/REC-html40">
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html>
+            <head>
+                <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+            </head>
+            <body><h1>Database Billigsteol</h1><h2>Table structure for table Utesteder</h2><table class="width100" cellspacing="1"><tr class="print-category"><th class="print">Column</th><td class="print"><strong>Type</strong></td><td class="print"><strong>Null</strong></td><td class="print"><strong>Default</strong></td></tr><tr class="print-category"><td class="print">Navn</td><td class="print">varchar(255)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">Avstand</td><td class="print">int(11)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">Pris</td><td class="print">int(11)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">Åpningstid</td><td class="print">text</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">Matservering</td><td class="print">tinyint(1)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">Studentrabatt</td><td class="print">tinyint(1)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">Aldersgrense</td><td class="print">int(11)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">Bilde</td><td class="print">text</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">Adresse</td><td class="print">text</td><td class="print">No</td><td class="print"></td></tr></table><h2>Dumping data for table Utesteder</h2><table class="width100" cellspacing="1"><tr class="print-category"><td class="print"></td><td class="print">0</td><td class="print">0</td><td class="print">NULL</td><td class="print">0</td><td class="print">0</td><td class="print">0</td><td class="print"></td><td class="print"></td></tr><tr class="print-category"><td class="print">Puttis Skjenkestue</td><td class="print">0</td><td class="print">52</td><td class="print">Ons-tors 17:00-00:00</td><td class="print">0</td><td class="print">1</td><td class="print">18</td><td class="print"></td><td class="print">Christian Krohgs gate 32
+0107 Oslo
+</td></tr><tr class="print-category"><td class="print">Rett inn bar</td><td class="print">0</td><td class="print">39</td><td class="print">Man-Søn 15:00-01:00</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Storgata 39
+0182 Oslo
+</td></tr><tr class="print-category"><td class="print">Samfunnet Bislet</td><td class="print">0</td><td class="print">40</td><td class="print">Ons-fre 16:00-01:00</td><td class="print">0</td><td class="print">1</td><td class="print">18</td><td class="print"></td><td class="print">Pilestredet 52
+0167 Oslo
+</td></tr><tr class="print-category"><td class="print">Stargate</td><td class="print">0</td><td class="print">45</td><td class="print">Man-lør 15:00-03:00
+Søn 17:00-0300</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Pilestredet 39
+0166 Oslo
+</td></tr><tr class="print-category"><td class="print">Klostrenga Cafe og Bar</td><td class="print">0</td><td class="print">48</td><td class="print">Man-fre 07:30-01:00
+Lør 10:00-01:00
+Søn 12:00-01:00
+
+</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Schweigaards gate 60 B
+0656 Oslo
+</td></tr><tr class="print-category"><td class="print">Den Røde Mølle</td><td class="print">0</td><td class="print">49</td><td class="print">Man-søn 14:00-23:00</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Brugata 9
+0186 Oslo
+</td></tr><tr class="print-category"><td class="print">Bør og Børsen</td><td class="print">0</td><td class="print">51</td><td class="print">Man-søn 14:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Trondheimsveien 13 
+0560 Oslo
+</td></tr><tr class="print-category"><td class="print">Ivars Kro</td><td class="print">0</td><td class="print">52</td><td class="print">13:00-03:30</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Grønland 14
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Waldemars Cafe</td><td class="print">0</td><td class="print">56</td><td class="print">Man-fre 10:00-01:00
+Lør-søn 12:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Waldemar Thranesgate 1
+0171 Oslo
+</td></tr><tr class="print-category"><td class="print">Sofies Mat og Vinhus</td><td class="print">0</td><td class="print">58</td><td class="print">Man-søn 15:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Sofies Gate 15
+0170 Oslo
+</td></tr><tr class="print-category"><td class="print">Alexandria Cafe</td><td class="print">0</td><td class="print">59</td><td class="print">Man-søn 12:00-03:00</td><td class="print">0</td><td class="print">1</td><td class="print">18</td><td class="print"></td><td class="print">Thorvald meyers gate 85
+0550 Oslo
+</td></tr><tr class="print-category"><td class="print">Cafe Nero</td><td class="print">0</td><td class="print">61</td><td class="print">Man-søn 15:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Theresesgate 47
+0354 Oslo
+</td></tr><tr class="print-category"><td class="print">Crowbar</td><td class="print">0</td><td class="print">62</td><td class="print">Man-søn 15:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Torggata 32
+0183 Oslo
+</td></tr><tr class="print-category"><td class="print">Cafe Abel</td><td class="print">0</td><td class="print">64</td><td class="print">Man-søn 12:00-23:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Vestgrensa 2
+0851 Oslo
+</td></tr><tr class="print-category"><td class="print">Cafe Fiasco</td><td class="print">0</td><td class="print">64</td><td class="print">Man-tors 10:00-01:00
+Fre-Søn 11:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Schweigaardsgate 4
+0185 Oslo
+</td></tr><tr class="print-category"><td class="print">Den gode </td><td class="print">0</td><td class="print">70</td><td class="print">Man-tors 15:00-23:00
+Fre-lør 15:00-01:00
+Søn 12:00-2300</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Fredensborgveien 13
+0177 Oslo
+</td></tr><tr class="print-category"><td class="print">Pigalle</td><td class="print">0</td><td class="print">72</td><td class="print">Ons-lør 18:00-00:30
+</td><td class="print">0</td><td class="print">0</td><td class="print">25</td><td class="print"></td><td class="print">Grønlandsleiret 15 
+0190 Oslo
+</td></tr><tr class="print-category"><td class="print">Tea Lounge </td><td class="print">0</td><td class="print">72</td><td class="print">NULL</td><td class="print">1</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Thorvald Meyers gate 33C
+0555 Oslo
+</td></tr><tr class="print-category"><td class="print">Kafe Con Bar</td><td class="print">0</td><td class="print">0</td><td class="print">Man-ons 10:00-01:00
+Tors-lør 10:00-03:00
+Søn 10:00-12:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Brugata 11
+0186 Oslo
+</td></tr><tr class="print-category"><td class="print">Politiker'n</td><td class="print">0</td><td class="print">0</td><td class="print">Man-lør 10:00-03:00
+Søn 12:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Youngstorget 6
+0181 Oslo
+</td></tr><tr class="print-category"><td class="print">Fuglen</td><td class="print">0</td><td class="print">74</td><td class="print">Man-fre 07:30-01:00
+Lør 10:00-03:00
+Søn 11:00-22:00</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Universitetsgata 2
+0164 Oslo
+</td></tr><tr class="print-category"><td class="print">Oslo Mekaniske Verksted</td><td class="print">0</td><td class="print">76</td><td class="print">Man-fre 15:00-02:00
+Lør-søn 13:00-02:00</td><td class="print">0</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Tøyenbekken 34 
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Tilt</td><td class="print">0</td><td class="print">76</td><td class="print">Man-søn 15:00-03:30</td><td class="print">0</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Torggata 16
+0181 Oslo
+</td></tr><tr class="print-category"><td class="print">Kafe Asylet</td><td class="print">0</td><td class="print">76</td><td class="print">Man-fre 11:00-00:30
+Lør 12:00-00:30
+Søn 12:00-23:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Grønland 28
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Angst</td><td class="print">0</td><td class="print">79</td><td class="print">Ons-fre 12:00-01:00
+Lør-søn 12:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Torggata 11
+0181 Oslo
+</td></tr><tr class="print-category"><td class="print">Dattera til Hagen</td><td class="print">0</td><td class="print">85</td><td class="print">Man-tors 11:00-01:00
+Fre-lør 11:00-03:00
+Søn 12:00-00:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Grønland 10
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Oslo Camping</td><td class="print">0</td><td class="print">86</td><td class="print">Man-ons 13:00-01:00
+Tors-lør 13:00-03:00
+Søn 13:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Møllergata 12
+Oslo
+
+</td></tr><tr class="print-category"><td class="print">Håndverkstuene</td><td class="print">0</td><td class="print">88</td><td class="print">Man-ons 15:00-00:00
+Tors-søn 15:00-01:00</td><td class="print">0</td><td class="print">1</td><td class="print">23</td><td class="print"></td><td class="print">Rosenkrantzgate 7
+0159 Oslo
+</td></tr><tr class="print-category"><td class="print">Puttis Skjenkestue</td><td class="print">0</td><td class="print">52</td><td class="print">Ons-tors 17:00-00:00</td><td class="print">0</td><td class="print">1</td><td class="print">18</td><td class="print"></td><td class="print">Christian Krohgs gate 32
+0107 Oslo
+</td></tr><tr class="print-category"><td class="print">Rett inn bar</td><td class="print">0</td><td class="print">39</td><td class="print">Man-Søn 15:00-01:00</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Storgata 39
+0182 Oslo
+</td></tr><tr class="print-category"><td class="print">Samfunnet Bislet</td><td class="print">0</td><td class="print">40</td><td class="print">Ons-fre 16:00-01:00</td><td class="print">0</td><td class="print">1</td><td class="print">18</td><td class="print"></td><td class="print">Pilestredet 52
+0167 Oslo
+</td></tr><tr class="print-category"><td class="print">Stargate</td><td class="print">0</td><td class="print">45</td><td class="print">Man-lør 15:00-03:00
+Søn 17:00-0300</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Pilestredet 39
+0166 Oslo
+</td></tr><tr class="print-category"><td class="print">Klostrenga Cafe og Bar</td><td class="print">0</td><td class="print">48</td><td class="print">Man-fre 07:30-01:00
+Lør 10:00-01:00
+Søn 12:00-01:00
+
+</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Schweigaards gate 60 B
+0656 Oslo
+</td></tr><tr class="print-category"><td class="print">Den Røde Mølle</td><td class="print">0</td><td class="print">49</td><td class="print">Man-søn 14:00-23:00</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Brugata 9
+0186 Oslo
+</td></tr><tr class="print-category"><td class="print">Bør og Børsen</td><td class="print">0</td><td class="print">51</td><td class="print">Man-søn 14:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Trondheimsveien 13 
+0560 Oslo
+</td></tr><tr class="print-category"><td class="print">Ivars Kro</td><td class="print">0</td><td class="print">52</td><td class="print">13:00-03:30</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Grønland 14
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Waldemars Cafe</td><td class="print">0</td><td class="print">56</td><td class="print">Man-fre 10:00-01:00
+Lør-søn 12:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Waldemar Thranesgate 1
+0171 Oslo
+</td></tr><tr class="print-category"><td class="print">Sofies Mat og Vinhus</td><td class="print">0</td><td class="print">58</td><td class="print">Man-søn 15:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Sofies Gate 15
+0170 Oslo
+</td></tr><tr class="print-category"><td class="print">Alexandria Cafe</td><td class="print">0</td><td class="print">59</td><td class="print">Man-søn 12:00-03:00</td><td class="print">0</td><td class="print">1</td><td class="print">18</td><td class="print"></td><td class="print">Thorvald meyers gate 85
+0550 Oslo
+</td></tr><tr class="print-category"><td class="print">Cafe Nero</td><td class="print">0</td><td class="print">61</td><td class="print">Man-søn 15:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Theresesgate 47
+0354 Oslo
+</td></tr><tr class="print-category"><td class="print">Crowbar</td><td class="print">0</td><td class="print">62</td><td class="print">Man-søn 15:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Torggata 32
+0183 Oslo
+</td></tr><tr class="print-category"><td class="print">Cafe Abel</td><td class="print">0</td><td class="print">64</td><td class="print">Man-søn 12:00-23:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Vestgrensa 2
+0851 Oslo
+</td></tr><tr class="print-category"><td class="print">Cafe Fiasco</td><td class="print">0</td><td class="print">64</td><td class="print">Man-tors 10:00-01:00
+Fre-Søn 11:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Schweigaardsgate 4
+0185 Oslo
+</td></tr><tr class="print-category"><td class="print">Den gode </td><td class="print">0</td><td class="print">70</td><td class="print">Man-tors 15:00-23:00
+Fre-lør 15:00-01:00
+Søn 12:00-2300</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Fredensborgveien 13
+0177 Oslo
+</td></tr><tr class="print-category"><td class="print">Pigalle</td><td class="print">0</td><td class="print">72</td><td class="print">Ons-lør 18:00-00:30
+</td><td class="print">0</td><td class="print">0</td><td class="print">25</td><td class="print"></td><td class="print">Grønlandsleiret 15 
+0190 Oslo
+</td></tr><tr class="print-category"><td class="print">Tea Lounge </td><td class="print">0</td><td class="print">72</td><td class="print">NULL</td><td class="print">1</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Thorvald Meyers gate 33C
+0555 Oslo
+</td></tr><tr class="print-category"><td class="print">Kafe Con Bar</td><td class="print">0</td><td class="print">0</td><td class="print">Man-ons 10:00-01:00
+Tors-lør 10:00-03:00
+Søn 10:00-12:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Brugata 11
+0186 Oslo
+</td></tr><tr class="print-category"><td class="print">Politiker'n</td><td class="print">0</td><td class="print">0</td><td class="print">Man-lør 10:00-03:00
+Søn 12:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Youngstorget 6
+0181 Oslo
+</td></tr><tr class="print-category"><td class="print">Fuglen</td><td class="print">0</td><td class="print">74</td><td class="print">Man-fre 07:30-01:00
+Lør 10:00-03:00
+Søn 11:00-22:00</td><td class="print">0</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Universitetsgata 2
+0164 Oslo
+</td></tr><tr class="print-category"><td class="print">Oslo Mekaniske Verksted</td><td class="print">0</td><td class="print">76</td><td class="print">Man-fre 15:00-02:00
+Lør-søn 13:00-02:00</td><td class="print">0</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Tøyenbekken 34 
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Tilt</td><td class="print">0</td><td class="print">76</td><td class="print">Man-søn 15:00-03:30</td><td class="print">0</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Torggata 16
+0181 Oslo
+</td></tr><tr class="print-category"><td class="print">Kafe Asylet</td><td class="print">0</td><td class="print">76</td><td class="print">Man-fre 11:00-00:30
+Lør 12:00-00:30
+Søn 12:00-23:00</td><td class="print">1</td><td class="print">0</td><td class="print">18</td><td class="print"></td><td class="print">Grønland 28
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Angst</td><td class="print">0</td><td class="print">79</td><td class="print">Ons-fre 12:00-01:00
+Lør-søn 12:00-03:00</td><td class="print">1</td><td class="print">0</td><td class="print">23</td><td class="print"></td><td class="print">Torggata 11
+0181 Oslo
+</td></tr><tr class="print-category"><td class="print">Dattera til Hagen</td><td class="print">0</td><td class="print">85</td><td class="print">Man-tors 11:00-01:00
+Fre-lør 11:00-03:00
+Søn 12:00-00:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Grønland 10
+0188 Oslo
+</td></tr><tr class="print-category"><td class="print">Oslo Camping</td><td class="print">0</td><td class="print">86</td><td class="print">Man-ons 13:00-01:00
+Tors-lør 13:00-03:00
+Søn 13:00-01:00</td><td class="print">1</td><td class="print">0</td><td class="print">20</td><td class="print"></td><td class="print">Møllergata 12
+Oslo
+
+</td></tr><tr class="print-category"><td class="print">Håndverkstuene</td><td class="print">0</td><td class="print">88</td><td class="print">Man-ons 15:00-00:00
+Tors-søn 15:00-01:00</td><td class="print">0</td><td class="print">1</td><td class="print">23</td><td class="print"></td><td class="print">Rosenkrantzgate 7
+0159 Oslo
+</td></tr></table></body></html>
