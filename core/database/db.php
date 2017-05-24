@@ -2,8 +2,8 @@
 
     $host = "localhost";
     $db = "utesteder";
-    $bruker = "root";
-    $pass = "root";
+    $bruker = "test";
+    $pass = "";
 
     // Prøv å koble til databasen. Hvis problem oppstår, gi en feilmelding til bruker.
     try {

@@ -1,8 +1,8 @@
 <?php
 
 $port = 8889;
-$username = 'root';
-$password = 'root';
+$username = 'hero';
+$password = 'passord';
 $name = 'billigsteol';
 
 $connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}", $username, $password);
@@ -28,14 +28,12 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     
 <body>
     <div id="testContainer">
-        
-        */ <?php $billigsteol = 'SELECT navn, pris FROM utesteder'; ?> */
         <div id="testTextwrap">
             <p>Resultat basert på avstand, aldersgrense og prisnivå</p>
         </div>
         <div id="testTextwrap2">
-            <h2>Navn:/* <?= $row['navn'] ?> */</h2>
-            <h2>Pris:/* <?= $row['pris'] ?> */</h2>
+            <h2>Navn:</h2>
+            <h2>Pris:</h2>
         </div>
         <img id="testBilde" src="Bilde/Bilde1.png">
     
