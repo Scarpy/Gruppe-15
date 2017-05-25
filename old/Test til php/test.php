@@ -1,40 +1,35 @@
 <?php
+$servername = "tek.westerdals.no";
+$port = "3306";
+$username = "limrui16_dbBeer";
+$password = "Billigsteol123";
+$dbName = "limrui16_billigsteol";
 
-$port = 8889;
-$username = 'hero';
-$password = 'passord';
-$name = 'billigsteol';
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbName, $port);
 
-$connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}", $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
 
-$statement = $connection->prepare('SELECT * FROM utesteder');
-$statement->execute();
+// pass på at norske tegn vises riktig
+$conn->set_charset("utf8");
 
-$utesteder = [];
+// raw sql
+$sql = "SELECT * FROM utesteder";
+// send inn query
+$result = $conn->query($sql);
 
-while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-    $utesteder[] = $row;
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["navn"]. " - Avstand: " . $row["avstand"]. "<br>";
+    }
+} else {
+    echo "0 results";
 }
-
+$conn->close();
 ?>
-
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">  
-	<link href="test.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600|Roboto:300,400" rel="stylesheet">
-    </head>
-    
-<body>
-    <div id="testContainer">
-        <div id="testTextwrap">
-            <p>Resultat basert på avstand, aldersgrense og prisnivå</p>
-        </div>
-        <div id="testTextwrap2">
-            <h2>Navn:</h2>
-            <h2>Pris:</h2>
-        </div>
-        <img id="testBilde" src="Bilde/Bilde1.png">
-    
-    </div>
+<p>ferdig xd <?= '' ?></p
