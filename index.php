@@ -1,9 +1,9 @@
 <?php
     require 'core/init.php';
     echo Init::header();
-?>
-    <div class="container" style="background: url(./img/bakgrunn.png) no-repeat center">
-<?php
+
+    echo '<div class="container" style="background: url(./img/bakgrunn.png) no-repeat center">';
+    
     require_once 'core/header.php';
 ?>
 		<div class="container--inner">
