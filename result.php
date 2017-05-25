@@ -6,6 +6,7 @@ echo Init::header();
 $avstand = $_GET['avstand'];
 $alder = $_GET['alder'];
 $pris = $_GET['pris'];
+//Åpningstid er bare å drite i hvis dere ikke er smartere på hvordan dere har satt opp databasen. Evt kan dere bare kjøre en spørring på det og ikke filtrere på det. ;) 
 $apning = $_GET['apning'];
 $mat = $_GET['mat'];
 $rabatt = $_GET['rabatt'];
