@@ -13,6 +13,7 @@
 				<meta http-equiv="X-UA-Compatible" content="IE=9" />
 				<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600|Roboto:300,400" rel="stylesheet">
 			    <link rel="stylesheet" href="assets/style.css" type="text/css" />
+                <link rel="stylesheet" type="text/css" href="./assets/sokecss.css">
 
 			    <title>Billigst Øl</title>
 			</head>
