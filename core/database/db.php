@@ -23,7 +23,6 @@ $conn->set_charset("utf8");*/
     try {
         $database = new PDO("mysql:host=$host;dbname=$db", "$bruker", "$pass");
         $database -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo 'work';
     } catch(PDOException $e) {
         echo "Beklager, det oppstod et problem med databasen. Gi beskjed til administrasjonen";
         exit();

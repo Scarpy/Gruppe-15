@@ -1,45 +1,38 @@
 <?php
-require 'core/database/db.php';
 
-if(isset($_GET['avstand'])){
-    $avstand = $_GET['avstand'];
-    
-    $sql = "SELECT * FROM utesteder WHERE avstand <= $avstand";
-    $result = $conn->query($sql);
-    
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            echo "  ".$row["id"]."  ".$row["avstand"]."  ".$row["pris"]."<br>";
-        }
+require 'core/init.php';
+echo Init::header();
+
+$avstand = $_GET['avstand'];
+$alder = $_GET['alder'];
+$pris = $_GET['pris'];
+$apning = $_GET['apning'];
+$mat = $_GET['mat'];
+$rabatt = $_GET['rabatt'];
+
+// Starter queryen.
+    $query = "
+        SELECT * FROM utesteder 
+        WHERE avstand < '$avstand' 
+        AND aldersgrense <= '$alder'
+        AND pris <= '$pris'
+        AND matservering = '$mat'
+        AND studentrabatt = '$rabatt'
+    ";
+    $sql = $database->prepare("$query;");
+    $sql->setFetchMode(PDO::FETCH_OBJ);
+    $sql->execute();
+
+    $result = $sql->fetchAll(PDO::FETCH_OBJ);
+
+    //echo '<pre>' . print_r($result, true) . '</pre>';
+
+// Kjører en loop for hvert element i som PDO henter. &id
+    foreach ($result as $element) {
+        echo $element->navn; 
+        echo '</br>';
     }
-    else {
-        echo "0 results";
-    }
-    
-    /*
-    try {
-        $sql = "SELECT * FROM utesteder WHERE avstand < $avstand";
-        $stmt = $database->prepare($sql);
-        $stmt->excute();
-        $result 
-    }
-    */
-}
 
-
-?>
-<?php
-    require 'core/init.php';
-    echo Init::header();
-?>
-
-<body>
-<?php 
     
-    
-    
-?>
-
-<?php
 	require 'core/init.php';
     echo Init::footer();
