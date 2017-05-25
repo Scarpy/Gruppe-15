@@ -13,6 +13,7 @@
 			</div>
 	    </div>
 	    <img id="pilNed" src="img/icons/Pilnedover.png">
+	</div>
 	<div id="infoContainer">
         <div id="infoBoxBorder"></div>
         <div id="infoColumn1">
