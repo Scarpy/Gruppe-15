@@ -26,10 +26,8 @@
 		        
 		    <p>Sit ei dicant volutpat, consul sanctus adipisci ne sea, tollit ubique mediocritatem in nec. Conceptam maiestatis at per. Error impedit copiosae id mei, has nulla petentium ad, vel paulo graeci patrioque at. Feugait posidonium cum eu, clita utamur utroque vim ea.</p>
         </div>
-        
-        <?php require 'sokeside.html' ?>
-
 	</div>
+	<?php require 'sokeside.php' ?>
 <?php
 
 	require '/core/init.php';
