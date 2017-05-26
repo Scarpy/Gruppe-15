@@ -27,6 +27,8 @@ $rabatt = $_GET['rabatt'];
 
     $result = $sql->fetchAll(PDO::FETCH_OBJ);
 
+    echo '<div class="sqlContainer">';
+
     echo '<div class="sqlresults">';
 
     if ($count === 0){
@@ -43,6 +45,7 @@ $rabatt = $_GET['rabatt'];
         }
     }
 
+    echo '</div>';
     echo '</div>';
     
 	require 'core/init.php';

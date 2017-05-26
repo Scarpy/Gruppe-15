@@ -424,3 +424,31 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     right: 0;
     margin: auto;
 }
+
+.sqlContainer {
+    width: 100%;
+    margin: 0;
+    height: 100vh; 
+    overflow-x: hidden;
+    background-image: url(../img/bakgrunn.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.sqlresults-items {
+    width: 275px;
+    height: 500px;
+    margin: 20px 20px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid blue;
+}
+
+.sqlresults-items-img {
+    width: 225px;
+    height: 225px;
+    margin: 25px;
+    border-radius: 50%; 
+    background-color: green;
+}
