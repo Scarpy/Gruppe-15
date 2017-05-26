@@ -30,8 +30,12 @@ $rabatt = $_GET['rabatt'];
 
 // Kjører en loop for hvert element i som PDO henter. &id
     foreach ($result as $element) {
-        echo $element->navn; 
-        echo '</br>';
+        echo '
+            <a href="infopage.php?id=' . $element->id . '"><div class="#">
+                <span>' . $element->navn . '</span>
+            </div></a>
+        ';
+
     }
 
     

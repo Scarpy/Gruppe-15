@@ -2,7 +2,7 @@
 #map {
     position: absolute;
     top: 12.5%;
-    left: 5%;
+    left: 50px;
     height: 600px;
     width: 750px;
 }
@@ -18,8 +18,8 @@ html, body {
 /* Navigasjonsbar på Map */
 #floating-panel {
     position: absolute;
-    top: 13.5%;
-    left: 20%;
+    top: 110px;
+    left: 250px;
     z-index: 5;
     background-color: #fff;
     padding: 5px;
@@ -33,10 +33,10 @@ html, body {
 /* Tekstkolonne */
 #mainContent {
     position: absolute;
-    left: 63%;
-    top: 31.7%;
-    width: 33%;
-    height: 55%;
+    left: 860px;
+    top: 250px;
+    width: 450px;
+    height: 450px;
     border-color: #37ABB1;
     border-left-style: solid;
     border-left-width: 1px;
@@ -45,10 +45,9 @@ html, body {
 /* Logo div */
 #logo {
     position: absolute;
-    left: 63%;
-    top: 12.5%;
-    width: 33%;
-    height 20%;
+    left: 860px;
+    top: 100px;
+    width: 450px;
     border-color: #37ABB1;
     border-left-style: solid;
     border-left-width: 1px;
