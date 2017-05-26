@@ -29,22 +29,26 @@ $rabatt = $_GET['rabatt'];
 
     echo '<div class="sqlContainer">';
 
+    require_once 'core/header.php';
+
     echo '<div class="sqlresults">';
 
     if ($count === 0){
-        echo 'no results';
+        echo '<span class="sqlresults-title">Ikke noe resultat på ditt søk</span>';
     } else {
+        echo '<span class="sqlresults-title">Velg en bar</span>';
         foreach ($result as $element) {
             echo '
                 <a href="infopage.php?' . $element->id . '"><div class="sqlresults-items">
                     <div class="sqlresults-items-img"></div>
-                    <div class="sqlresults-items-name">' . $element->navn . '</div>
-                    <div class="sqlresults-items-adress">' . $element->adresse . '</div>
+                    <span>Navn: </span>
+                    <span class="sqlresults-items-name">' . $element->navn . '</span>
+                    <span>Adresse: </span>
+                    <span class="sqlresults-items-adress">' . $element->adresse . '</span>
                 </div></a>
             ';
         }
     }
-
     echo '</div>';
     echo '</div>';
     

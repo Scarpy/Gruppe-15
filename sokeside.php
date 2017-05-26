@@ -16,7 +16,7 @@
                     <br>
                 <span>Aldersgrense</span>
                 <input name="alder" id="alder" type="range" min="18" max="26" value="18" step="1" onchange="visAlder(this.value)" />
-                <span id="Alder">0</span><span>år</span>
+                <span id="Alder">18</span><span>år</span>
                 <script type="text/javascript">
                 function visAlder(newValue)
                     {
@@ -27,7 +27,7 @@
                     <br>
                 <span>Pris for øl</span>
                 <input name="pris" id="pris" type="range" min="30" max="100" value="30" step="1" oninput="showValue(this.value)" />
-                <span id="alderTeller">0</span><span>kr</span>
+                <span id="alderTeller">30</span><span>kr</span>
                 <script type="text/javascript">
                 function showValue(newValue)
                     {

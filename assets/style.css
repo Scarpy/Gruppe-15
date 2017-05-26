@@ -436,13 +436,35 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background-position: center; 
 }
 
+.sqlContainer #stickyheader {
+    position: fixed; 
+    top: 0;
+    background-color: #d6e6e8;
+}
+
 .sqlresults-items {
     width: 275px;
-    height: 500px;
     margin: 20px 20px;
     display: inline-block;
     position: relative;
-    border: 2px solid blue;
+    border: 2px solid #2B518C;
+    background-color: rgba(255,255,255, 0.4);;
+}
+
+.sqlresults-title {
+    display: block; 
+    width: 100%; 
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sqlresults-items span {
+    display: block;
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .sqlresults-items-img {
@@ -451,4 +473,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     margin: 25px;
     border-radius: 50%; 
     background-color: green;
+}
+
+.sqlresults-items-name {
+    margin-bottom: 10px;
+}
+
+.sqlresults-items-adress {
+    padding-bottom: 25px;
 }

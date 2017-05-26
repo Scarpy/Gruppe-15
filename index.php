@@ -2,7 +2,7 @@
     require 'core/init.php';
     echo Init::header();
 
-    echo '<div class="container" style="background: url(./img/bakgrunn.png) no-repeat center">';
+    echo '<div id="hjem" class="container" style="background: url(./img/bakgrunn.png) no-repeat center">';
     
     require_once 'core/header.php';
 ?>
@@ -29,6 +29,22 @@
 	</div>
 
 	<?php require 'sokeside.php' ?>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script>
+		$(function(){
+	    var stickyHeaderTop = $('#stickyheader').offset().top;
+
+	    $(window).scroll(function(){
+	            if( $(window).scrollTop() > 800 ) {
+	                    $('#stickyheader').css({position: 'fixed', top: '0px', background: '#d6e6e8'});
+	            } else {
+	                    $('#stickyheader').css({position: 'absolute', top: '115px', background: 'transparent'});
+	            }
+	    	});
+		});
+	</script>
 
 
 <?php
