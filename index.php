@@ -32,9 +32,7 @@
 
 
 <?php
-
 	require '/core/init.php';
     echo Init::footer();
-
 ?>
 

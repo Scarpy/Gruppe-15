@@ -159,3 +159,246 @@ p{
     /* Skygge parametere! Kopier denne for å bruke til andre bilder! */
     box-shadow: 5px 5px 30px 5px #BDC3C7;
 }
+
+#navContainer
+{
+    width: 100%;
+    height: 100%;   
+}
+
+nav.section {
+    position: fixed;
+    min-height: 0;
+    text-align: center;
+    background: none;
+    width: 100%;
+    height: 10%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 25px;
+    margin:10px;
+    color:#FFF;
+    font-family: 'Oswald', serif;
+    letter-spacing: 4px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.container {    
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: url(Bilder/bakgrunn.png) no-repeat center fixed; 
+    background-size: cover;
+}
+
+.container--inner { 
+    height: 240px; 
+    width: 450px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    margin: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.container--inner--text {
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 850px; 
+    margin-left: -200px;
+    margin-right: -200px;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 5.5em;
+    font-weight: 300;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1,5em;
+    padding: 0 125px;
+}
+
+#infoContainer 
+{
+    width: 100%;
+    height: 800px;
+    background-color: #D6E6E8;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Rad 1. */
+#infoColumn1
+{
+    float: left;
+    width: 50%;
+    height: 700px;
+    margin: 75px;
+    margin-left: 100px;
+}
+
+/* Rad 2. */
+#infoColumn2
+{
+    float: left;
+    width: 25%;
+    height: 575px;
+    margin: 50px 5px 5px 5px;
+    padding: 15px 60px;
+    border-color: #37ABB1;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+/* Skal prøve å lage en mindre skillestrek med denne!
+#borderBox
+{
+    position: absolute;
+    height: 300px;
+    width: 50px;
+    border-color: #37ABB1;
+    border-left-style: solid;
+    border-left-width: 1px;
+    background-color: red;
+}
+
+*/
+
+#infoP
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+    padding: 0px 0px 0px 0px;
+}
+
+#fjerdingen
+{
+    width: 100%;
+    height: 550px;
+}
+
+/*          HER BEGYNNER SOKESIDE CSS       */
+
+/*        KRISTOFFER BEGYNNER HER    ///    */
+
+
+#soktekst {
+    text-align: right;
+}
+
+
+#sokeOverskrift {
+    text-align: center;
+    font-family: 'oswald', serif; 
+    letter-spacing: 8px;
+    
+}
+
+
+#sokContainer{
+    margin:auto;
+    width: 100%;
+    height: 800px; 
+    
+}
+
+#sokemeny {
+    margin:auto; 
+    border: 10px;
+    padding:100px; 
+    height: 800px;
+    width: 60%;
+    
+}
+
+#jaNei {
+    width: 10%;
+}
+
+
+#sokeknapp {
+    margin: auto;
+    
+    background-color: darkgrey;
+    height: 40px;
+    width: 200px;
+    
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10PX;
+  width: 70%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #BDC3C7;
+  background: #37ABB1;
+  border-radius: 1px;
+  border: 0px solid #BDC3C7;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px BDC3C7;
+  border: 1px solid #BDC3C7;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #7F8B8D;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #37ABB1;
+}
+
+
+.button {
+    background-color: #37ABB1;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    left: 350px; 
+    cursor: pointer;
+    width: 200px;
+}

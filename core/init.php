@@ -27,7 +27,7 @@
    	public static function footer(){
 
    		$content = '
-			</body>
+				</body>
 			</html>
    		';
 
