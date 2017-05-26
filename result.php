@@ -27,19 +27,23 @@ $rabatt = $_GET['rabatt'];
 
     $result = $sql->fetchAll(PDO::FETCH_OBJ);
 
+    echo '<div class="sqlresults">';
+
     if ($count === 0){
         echo 'no results';
     } else {
         foreach ($result as $element) {
             echo '
-                <a href="infopage.php?id=' . $element->id . '"><div class="#">
-                    <span>' . $element->navn . '</span>
+                <a href="infopage.php?' . $element->id . '"><div class="sqlresults-items">
+                    <div class="sqlresults-items-img"></div>
+                    <div class="sqlresults-items-name">' . $element->navn . '</div>
+                    <div class="sqlresults-items-adress">' . $element->adresse . '</div>
                 </div></a>
             ';
         }
-
-
     }
+
+    echo '</div>';
     
 	require 'core/init.php';
     echo Init::footer();
