@@ -1,9 +1,9 @@
 <?php
     require 'core/init.php';
     echo Init::header();
-?>
-    <div class="container" style="background: url(./img/bakgrunn.png) no-repeat center">
-<?php
+
+    echo '<div class="container" style="background: url(./img/bakgrunn.png) no-repeat center">';
+    
     require_once 'core/header.php';
 ?>
 		<div class="container--inner">
@@ -15,7 +15,7 @@
 	    <img id="pilNed" src="img/icons/Pilnedover.png">
 	</div>
 	<div id="infoContainer">
-        <div id="infoBoxBorder"></div>
+        <!--<div id="infoBoxBorder"></div>-->
         <div id="infoColumn1">
     		<img id="fjerdingen" src="img/Fjerdingen.jpg">
     	</div>
@@ -26,10 +26,11 @@
 		        
 		    <p>Sit ei dicant volutpat, consul sanctus adipisci ne sea, tollit ubique mediocritatem in nec. Conceptam maiestatis at per. Error impedit copiosae id mei, has nulla petentium ad, vel paulo graeci patrioque at. Feugait posidonium cum eu, clita utamur utroque vim ea.</p>
         </div>
-        
-        <?php require 'sokeside.html' ?>
-
 	</div>
+
+	<?php require 'sokeside.php' ?>
+
+
 <?php
 
 	require '/core/init.php';
