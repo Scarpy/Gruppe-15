@@ -22,13 +22,23 @@
     border-color: #37ABB1;
 }
 
+#testP
+{
+    color: #4A4A4A;
+    font-size: 1,5em;
+    padding: 0 125px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+}
+
 
 #resultatSirkel {
     position: absolute;
     margin:auto;
+    left: 50px;
     top: 150px;
     background-color: bisque;
-    background-image: url(testbilde/Cafeconbar.png);
+    /* background-image: url(testbilde/Cafeconbar.png); */
     width: 227px;
 	height: 227px;
 	-moz-border-radius: 113px;
