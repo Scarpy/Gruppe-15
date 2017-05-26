@@ -7,7 +7,6 @@ $avstand = $_GET['avstand'];
 $alder = $_GET['alder'];
 $pris = $_GET['pris'];
 //Åpningstid er bare å drite i hvis dere ikke er smartere på hvordan dere har satt opp databasen. Evt kan dere bare kjøre en spørring på det og ikke filtrere på det. ;) 
-$apning = $_GET['apning'];
 $mat = $_GET['mat'];
 $rabatt = $_GET['rabatt'];
 
@@ -24,20 +23,23 @@ $rabatt = $_GET['rabatt'];
     $sql->setFetchMode(PDO::FETCH_OBJ);
     $sql->execute();
 
+    $count = $sql->rowCount();
+
     $result = $sql->fetchAll(PDO::FETCH_OBJ);
 
-    //echo '<pre>' . print_r($result, true) . '</pre>';
+    if ($count === 0){
+        echo 'no results';
+    } else {
+        foreach ($result as $element) {
+            echo '
+                <a href="infopage.php?id=' . $element->id . '"><div class="#">
+                    <span>' . $element->navn . '</span>
+                </div></a>
+            ';
+        }
 
-// Kjører en loop for hvert element i som PDO henter. &id
-    foreach ($result as $element) {
-        echo '
-            <a href="infopage.php?id=' . $element->id . '"><div class="#">
-                <span>' . $element->navn . '</span>
-            </div></a>
-        ';
 
     }
-
     
 	require 'core/init.php';
     echo Init::footer();
