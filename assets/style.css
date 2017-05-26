@@ -331,11 +331,8 @@ p{
 }
 
 #sokemeny {
-    margin:auto; 
-    border: 10px;
-    padding:100px; 
     height: 800px;
-    width: 60%;
+    width: 100%;
     
 }
 
@@ -346,7 +343,6 @@ p{
 
 #sokeknapp {
     margin: auto;
-    
     background-color: darkgrey;
     height: 40px;
     width: 200px;
@@ -356,8 +352,9 @@ p{
 input[type=range] {
   -webkit-appearance: none;
   margin: 10PX;
-  width: 70%;
+  width: 90%;
 }
+
 input[type=range]:focus {
   outline: none;
 }
@@ -401,4 +398,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     left: 350px; 
     cursor: pointer;
     width: 200px;
+}
+
+/*Håkons del*/
+
+.sokContainer-wrapper {
+    width: 850px;
+    padding-top: 50px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
