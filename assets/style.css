@@ -337,7 +337,7 @@ p{
 }
 
 #jaNei {
-    width: 10%;
+    width: 20%;
 }
 
 
@@ -409,4 +409,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.smallrange[type=range] {
+  -webkit-appearance: none;
+  margin: 10PX;
+  width: 40%;
 }
