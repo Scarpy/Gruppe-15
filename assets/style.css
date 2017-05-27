@@ -576,3 +576,31 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .bar-info-data-apningstid {
     position: absolute;
 }
+
+.bar-inner-right {
+    float: right;
+    height: 500px;
+    width: 500px;
+}
+
+.bar-inner-right-wrapper {
+    height: 250px;
+    width: 100%;
+    margin-top: 125px;
+    position: relative;
+    border-left: 2px solid white;
+}
+
+.bar-inner-right-wrapper-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:300px;
+    height: 400px;
+    top: -75px;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    background-position: center;
+
+}

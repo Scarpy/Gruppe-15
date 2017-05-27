@@ -45,6 +45,13 @@ require_once 'core/header.php';
                             <div class="inner-left-info-data"><span class="bar-info-title">Åpningstider</span><span class="bar-info-data"><span class="bar-info-data-apningstid">' . $element->apningstid . '</span></span></div>
                         </div>
                     </div>
+                    <div class="bar-inner-right">
+                        <div class="bar-inner-right-wrapper">
+                            <div class="bar-inner-right-wrapper-img" style="background-image: url(' . $element->bilde_path . ')">
+
+                            </div>
+                        </div>
+                    </div>
             ';
         }
 
