@@ -29,6 +29,7 @@
 	</div>
 
 	<?php require 'sokeside.php' ?>
+    <?php require 'pieChart.php' ?>
 
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>

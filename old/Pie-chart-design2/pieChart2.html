@@ -1,3 +1,18 @@
+<?php
+require 'core/database/db.php';
+
+$chartLimit = 5;
+
+$query = "SELECT utesteder.navn, popularity.rating FROM utesteder JOIN popularity ON utesteder.pop_id=popularity.id ORDER BY rating DESC LIMIT $chartLimit";
+
+
+$sql = $database->prepare("$query;");
+$sql->setFetchMode(PDO::FETCH_OBJ);
+$sql->execute();
+
+$result = $sql->fetchAll(PDO::FETCH_OBJ);
+
+?>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -13,11 +28,13 @@
         data.addColumn('string', 'Beers');
         data.addColumn('number', 'Prices');
         data.addRows([
-          ['Lir', 23],
-          ['Mir', 32],
-          ['Sir', 40],
-          ['Zir', 28],
-          ["Dje", 59]
+            <?php foreach ($result as $row) { ?>
+                <?php if($row == $result[0]) { ?>
+                    ['<?= $row->navn ?>', <?= $row->rating ?>]
+                <?php } else { ?>
+                    ,['<?= $row->navn ?>', <?= $row->rating ?>]
+                <?php } ?>
+            <?php } ?>
         ]);
 
           //adjust how you want the chart to look
@@ -62,20 +79,21 @@
         chart.draw(data, options);
       }
     </script>
-    <link rel="stylesheet" type="text/css" href="pieChart.css">
+    <link rel="stylesheet" type="text/css" href="./assets/pieChart.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600|Roboto:300,400" rel="stylesheet">
 
   </head>
   <body>
+      
     <table class="columns">
+            <h1 id="popTitle">HER ER WESTERDØLINGENE</h1>
+            <h2 id="chart1Title">Akkurat nå</h2>
+            <h2 id="chartTitle2">Den siste måned</h2>
+            <div id="infoBoxBorder"></div>
       <tr>
         <td><div id="pieChart1" style="background-color:#D6E6E8;"></div></td>
         <td><div id="pieChart2" style="background-color:#D6E6E8;"></div></td>
       </tr>
     </table>
-      <h1 id="popTitle">HER ER WESTERDØLINGENE</h1>
-      <h2 id="chart1Title">Akkurat nå</h2>
-      <h2 id="chartTitle2">Den siste måned</h2>
-      <div id="infoBoxBorder"></div>
   </body>
 </html>
