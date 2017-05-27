@@ -17,8 +17,9 @@ require_once 'core/header.php';
     echo '<div class="infopageContainer-inner">';
 
         $query = "
-            SELECT * FROM utesteder 
-            WHERE id = '$id';
+            SELECT * FROM utesteder
+            JOIN popularity ON popularity.id = utesteder.id 
+            WHERE utesteder.id = '$id';
         ";
         $sql = $database->prepare("$query;");
         $sql->setFetchMode(PDO::FETCH_OBJ);
@@ -31,11 +32,33 @@ require_once 'core/header.php';
             $matservering = ($element->matservering == 0)? Nei : Ja;
             $studentrabatt = ($element->studentrabatt == 0)? Nei : Ja;
 
+            switch ($element->rating){
+                case 1: 
+                    $rating_path = 'img/Stjerner/1.png';
+                    break; 
+                case 2: 
+                    $rating_path = 'img/Stjerner/2.png';
+                    break; 
+                case 3: 
+                    $rating_path = 'img/Stjerner/3.png';
+                    break; 
+                case 4: 
+                    $rating_path = 'img/Stjerner/4.png';
+                    break; 
+                case 5: 
+                    $rating_path = 'img/Stjerner/5.png';
+                    break;
+                default:
+                    $rating_path = '';
+                    break;
+            }
 
+            echo '';
 
             echo '
                     <div class="bar-inner-left">
-                        <div class="inner-left-img"></div>
+                        <img class="bar-inner-left-stars" src="' . $rating_path . '" />
+                        <div class="inner-left-img" style="background-image: url(' . $element->logo_path . ');"></div>
                         <div class="inner-left-info">
                             <div class="inner-left-info-data"><span class="bar-info-title">Avstand </span><span class="bar-info-data">' . $element->avstand . ' meter</span></div>
                             <div class="inner-left-info-data"><span class="bar-info-title">Aldersgrense </span><span class="bar-info-data">' . $element->aldersgrense . ' år</span></div>

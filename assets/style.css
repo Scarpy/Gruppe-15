@@ -536,14 +536,25 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     width: 350px; 
     min-height: 500px;
     float: left; 
+    position: relative;
+}
+
+.bar-inner-left-stars {
+    height: 25px; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .inner-left-img {
     height: 250px;
     width: 250px;
-    background-color: #37abb1; 
-    margin: 20px 50px; 
+    margin: 40px 50px; 
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px 250px;
 }
 
 .inner-left-info {
