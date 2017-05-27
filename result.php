@@ -36,15 +36,18 @@ $rabatt = $_GET['rabatt'];
     if ($count === 0){
         echo '<span class="sqlresults-title">Ikke noe resultat på ditt søk</span>';
     } else {
-        echo '<span class="sqlresults-title">Velg en bar</span>';
         foreach ($result as $element) {
             echo '
-                <a href="infopage.php?' . $element->id . '"><div class="sqlresults-items">
-                    <div class="sqlresults-items-img"></div>
-                    <span>Navn: </span>
-                    <span class="sqlresults-items-name">' . $element->navn . '</span>
-                    <span>Adresse: </span>
-                    <span class="sqlresults-items-adress">' . $element->adresse . '</span>
+                <a href="infopage.php?id=' . $element->id . '"><div class="sqlresults-items">
+                    <div class="sqlresults-items-circle">
+                        <div class="circle-top">
+                            <img src="img/icons/ol.png" />
+                            <span>' . $element->pris . 'kr</span>
+                        </div>
+                        <div class="circle-bottom">
+                            <span>' . $element->navn . '</span>
+                        </div>
+                    </div>
                 </div></a>
             ';
         }

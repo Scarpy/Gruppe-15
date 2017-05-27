@@ -26,8 +26,6 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
         echo $element->navn; 
         echo $element->apningstid; 
         echo $element->addresse; 
-        echo '<img src="' . $element->bilde . '" alt="#"/>';
-
     }
     
 require 'core/init.php';
