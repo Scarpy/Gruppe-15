@@ -403,6 +403,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 /*Håkons del*/
 
+.rangetitle {
+    display: block;
+}
+
 .sokContainer-wrapper {
     width: 850px;
     padding-top: 50px;
@@ -506,4 +510,69 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: white;
+}
+
+.infopageContainer {
+    width: 100%;
+    margin: 0;
+    height: 100vh; 
+}
+
+.infopageContainer #stickyheader {
+    position: fixed; 
+    top: 0;
+    background-color: #d6e6e8;
+}
+
+.infopageContainer-inner {
+    width: 978px; 
+    left: 0;
+    right: 0;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.bar-inner-left {
+    width: 350px; 
+    min-height: 500px;
+    float: left; 
+}
+
+.inner-left-img {
+    height: 250px;
+    width: 250px;
+    background-color: #37abb1; 
+    margin: 20px 50px; 
+    border-radius: 50%;
+}
+
+.inner-left-info {
+    width: 300px;
+    margin-left: 25px; 
+    margin-top: 25px;
+}
+
+.inner-left-info-data {
+    width: 100%; 
+    display: block;
+    padding-bottom: 40px; 
+    font-size: 1.5rem;
+}
+
+.bar-info-title {
+    display: inline-block;
+    float: left; 
+    width: 45%;
+    text-align: right;
+}
+
+.bar-info-data {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+.bar-info-data-apningstid {
+    position: absolute;
 }
